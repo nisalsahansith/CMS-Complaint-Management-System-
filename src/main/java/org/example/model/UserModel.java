@@ -4,10 +4,14 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.commons.dbcp2.BasicDataSource;
 import org.example.model.dao.UserDAO;
 
+import javax.sql.DataSource;
+import java.awt.*;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.Map;
 import java.util.UUID;
 
@@ -23,7 +27,7 @@ public class UserModel {
                             "VALUES (?, ?, ?, ?, ?)"
             );
 
-            String eid = UUID.randomUUID().toString();
+//            String eid = UUID.randomUUID().toString();
 
             pstm.setString(1, userDAO.getId());
             pstm.setString(2, userDAO.getUserName());
@@ -43,5 +47,27 @@ public class UserModel {
             ));
             throw new RuntimeException(e);
         }
+    }
+
+    public UserDAO checkUser(String email, String password, DataSource ds){
+        try (Connection connection = ds.getConnection()){
+            PreparedStatement pstm = connection.prepareStatement(
+                    "SELECT * FROM user WHERE email = ? AND password = ?");
+            pstm.setString(1,email);
+            pstm.setString(2,password);
+            ResultSet list = pstm.executeQuery();
+            if (list.next()) {
+                return new UserDAO(list.getString(1),
+                        list.getString(2),
+                        list.getString(3),
+                        list.getString(4),
+                        list.getString(5));
+            }else {
+                return null;
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+
     }
 }

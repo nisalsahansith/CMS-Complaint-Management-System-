@@ -10,24 +10,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="272b933a-41de-4a15-8233-bc83d79482bb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/CMS_Web_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_blame.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/db.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/DBCP.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controllers/ComplaintController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controllers/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/model/ComplaintModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/model/UserModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/model/dao/ComplaintDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/model/dao/UserDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controllers/AdminPageController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controllers/LogOutController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controllers/SignInController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/html/adminPage.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/js/adminPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/js/dashboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CMS_Web_exploded/CSS/dashboard.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CMS_Web_exploded/CSS/dashboard.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CMS_Web_exploded/WEB-INF/classes/org/example/controllers/ComplaintController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CMS_Web_exploded/WEB-INF/classes/org/example/controllers/ComplaintController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CMS_Web_exploded/WEB-INF/classes/org/example/controllers/UserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CMS_Web_exploded/WEB-INF/classes/org/example/model/ComplaintModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CMS_Web_exploded/WEB-INF/classes/org/example/model/ComplaintModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CMS_Web_exploded/WEB-INF/classes/org/example/model/UserModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CMS_Web_exploded/WEB-INF/classes/org/example/model/UserModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CMS_Web_exploded/WEB-INF/classes/org/example/model/dao/ComplaintDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CMS_Web_exploded/WEB-INF/classes/org/example/model/dao/ComplaintDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CMS_Web_exploded/html/dashboard.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CMS_Web_exploded/html/dashboard.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CMS_Web_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CMS_Web_exploded/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CMS_Web_exploded/js/welcomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CMS_Web_exploded/js/welcomePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controllers/ComplaintController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controllers/ComplaintController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controllers/SignUpController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/ComplaintModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/ComplaintModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/UserModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/UserModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/dao/ComplaintDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/dao/ComplaintDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/view/CSS/dashboard.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/view/CSS/welcomePage.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/view/html/dashboard.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/view/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/view/js/welcomePage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/CSS/dashboard.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/CSS/dashboard.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/CSS/welcomePage.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/CSS/welcomePage.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/html/dashboard.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/html/dashboard.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/js/welcomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/welcomePage.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,12 +51,39 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="HTML File" />
         <option value="Class" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="main" />
+                    <option name="lastUsedInstant" value="1749815199" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="master" />
+                    <option name="lastUsedInstant" value="1749815198" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -62,10 +103,11 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Tomcat Server.Tomcat 11.0.7.executor": "Run",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -192,7 +234,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1749719219512</updated>
-      <workItem from="1749719220684" duration="13150000" />
+      <workItem from="1749719220684" duration="43392000" />
     </task>
     <servers />
   </component>

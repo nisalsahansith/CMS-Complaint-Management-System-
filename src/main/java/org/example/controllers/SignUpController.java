@@ -12,16 +12,10 @@ import org.example.model.UserModel;
 import org.example.model.dao.UserDAO;
 
 import java.io.IOException;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
-import java.util.Map;
 import java.util.UUID;
 
-import static java.lang.System.out;
-
-@WebServlet("/user")
-public class UserController extends HttpServlet {
+@WebServlet("/signup")
+public class SignUpController extends HttpServlet {
 
     private final UserModel userModel = new UserModel();
 

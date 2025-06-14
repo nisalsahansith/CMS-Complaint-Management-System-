@@ -28,6 +28,14 @@ $(document).ready(function () {
     }
 });
 
+$(document).ready(function () {
+    const errorMessage = $('body').data('login-error');
+    if (errorMessage) {
+        alert(errorMessage);
+        $('#loginForm')[0].reset(); // Reset the login form
+    }
+});
+
 
 
 
