@@ -40,11 +40,11 @@ public class AdminPageController extends HttpServlet {
             if (complaintId != null && !complaintId.isEmpty()) {
                 boolean deleted = complaintModel.deleteComplaint(complaintId, ds);
                 if (deleted) {
-                    resp.sendRedirect(req.getContextPath() + "/admin#myComplaints");
+                    resp.sendRedirect(req.getContextPath() + "/admin?delete=success#myComplaints");
                 } else {
-                    req.setAttribute("deletionError", "Failed to delete complaint. Please try again.");
-                    doGet(req, resp);
+                    resp.sendRedirect(req.getContextPath() + "/admin?delete=failure#myComplaints");
                 }
+
             } else {
                 req.setAttribute("deletionError", "Invalid complaint ID.");
                 doGet(req, resp);
@@ -72,11 +72,11 @@ public class AdminPageController extends HttpServlet {
         );
 
         boolean isUpdate = complaintModel.updateComplaint(complaintDAO,ds);
-        if (isUpdate){
-            resp.sendRedirect(req.getContextPath() + "/admin#myComplaints");
-        }else {
-            req.setAttribute("updateError", "Failed to update complaint. Please try again.");
-            doGet(req, resp);
+        if (isUpdate) {
+            resp.sendRedirect(req.getContextPath() + "/admin?update=success#myComplaints");
+        } else {
+            resp.sendRedirect(req.getContextPath() + "/admin?update=failure#myComplaints");
         }
+
     }
 }

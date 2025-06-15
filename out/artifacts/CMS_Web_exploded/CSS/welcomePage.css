@@ -11,10 +11,18 @@ body {
     padding: 40px;
 }
 
+.sign-in, .register{
+    background-color: white;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 350px;
+}
+
 h1 {
     text-align: center;
     margin-bottom: 30px;
-    color: #2c3e50;
+    color: #ffffff;
 }
 
 nav {
@@ -94,7 +102,7 @@ nav p {
     color: #555;
 }
 
-.register{
+.registers{
     display: none;
 }
 .forgot-password{

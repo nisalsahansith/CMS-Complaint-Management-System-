@@ -17,16 +17,27 @@ $(document).ready(function () {
     if (status === "success") {
         $("#registerFormDiv").hide();
         $("#signInForm").show();
-        alert("Registration successful! Please sign in.");
+        Swal.fire({
+            icon: 'success',
+            title: 'Registration Successful!',
+            text: 'Please sign in.',
+            confirmButtonText: 'OK'
+        });
     } else if (status === "error") {
         $("#registerFormDiv").show();
         $("#signInForm").hide();
-        alert(message);
+        Swal.fire({
+            icon: 'error',
+            title: 'Registration Failed',
+            text: message || 'Something went wrong.',
+            confirmButtonText: 'OK'
+        });
     } else {
         $("#registerFormDiv").hide();
         $("#signInForm").show();
     }
 });
+
 
 $(document).ready(function () {
     const errorMessage = $('body').data('login-error');

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome Page</title>
     <link rel="stylesheet" href="${pageContext.request.contextPath}/CSS/welcomePage.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
 </head>
 <body
         data-registration-status="<%= request.getAttribute("registrationSuccess") != null ? "success" : request.getAttribute("registrationError") != null ? "error" : "" %>"
@@ -52,11 +53,18 @@
 
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
         crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <% if (request.getAttribute("loginError") != null) { %>
     <script>
-        alert("<%= request.getAttribute("loginError") %>");
-        document.addEventListener("DOMContentLoaded", function() {
-            document.getElementById("loginForm").reset();
+        document.addEventListener("DOMContentLoaded", function () {
+            Swal.fire({
+                icon: 'error',
+                title: 'Login Failed',
+                text: '<%= request.getAttribute("loginError") %>',
+                confirmButtonColor: '#d33'
+            });
+            $('#loginForm')[0].reset();
         });
     </script>
     <% } %>

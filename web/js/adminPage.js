@@ -49,8 +49,62 @@ function setStatus(value) {
 }
 
 function deleteComplaint(id){
-    if (confirm("Are you sure you want to delete this complaint?")) {
-        $('#deleteComplaintId').val(id);
-        $('#deleteForm').submit();
-    }
+    Swal.fire({
+        title: 'Are you sure?',
+        text: "You won't be able to revert this!",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#d33',
+        cancelButtonColor: '#3085d6',
+        confirmButtonText: 'Yes, delete it!',
+        cancelButtonText: 'Cancel'
+    }).then((result) => {
+        if (result.isConfirmed) {
+            $('#deleteComplaintId').val(id);
+            $('#deleteForm').submit();
+        }
+    });
 }
+
+$(document).ready(function () {
+    const urlParams = new URLSearchParams(window.location.search);
+    const updateStatus = urlParams.get('update');
+    const deleteStatus = urlParams.get('delete');
+
+    if (updateStatus === 'success') {
+        Swal.fire({
+            icon: 'success',
+            title: 'Success',
+            text: 'Complaint updated successfully!',
+            timer: 2000,
+            showConfirmButton: false
+        });
+        // Remove the query param from URL after showing alert
+        history.replaceState(null, '', window.location.pathname + window.location.hash);
+    } else if (updateStatus === 'failure') {
+        Swal.fire({
+            icon: 'error',
+            title: 'Error',
+            text: 'Failed to update complaint. Please try again.'
+        });
+        history.replaceState(null, '', window.location.pathname + window.location.hash);
+    }
+
+    if (deleteStatus === 'success') {
+        Swal.fire({
+            icon: 'success',
+            title: 'Deleted',
+            text: 'Complaint deleted successfully!',
+            timer: 2000,
+            showConfirmButton: false
+        });
+        history.replaceState(null, '', window.location.pathname + window.location.hash);
+    } else if (deleteStatus === 'failure') {
+        Swal.fire({
+            icon: 'error',
+            title: 'Error',
+            text: 'Failed to delete complaint. Please try again.'
+        });
+        history.replaceState(null, '', window.location.pathname + window.location.hash);
+    }
+});

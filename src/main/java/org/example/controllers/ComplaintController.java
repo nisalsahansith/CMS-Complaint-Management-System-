@@ -34,14 +34,14 @@ public class ComplaintController extends HttpServlet {
             if (complaintId != null && !complaintId.isEmpty()) {
                 boolean deleted = complaintModel.deleteComplaint(complaintId, ds);
                 if (deleted) {
-                    resp.sendRedirect(req.getContextPath() + "/complaint#myComplaints");
+                    resp.sendRedirect(req.getContextPath() + "/complaint?status=deleted#myComplaints");
                 } else {
-                    req.setAttribute("deletionError", "Failed to delete complaint. Please try again.");
-                    doGet(req, resp);
+                    resp.sendRedirect(req.getContextPath() + "/complaint?status=deleteError#myComplaints");
+//                    doGet(req, resp);
                 }
             } else {
-                req.setAttribute("deletionError", "Invalid complaint ID.");
-                doGet(req, resp);
+                resp.sendRedirect(req.getContextPath() + "/complaint?status=deleteError#myComplaints");
+//                doGet(req, resp);
             }
             return;
         }
@@ -67,13 +67,12 @@ public class ComplaintController extends HttpServlet {
             );
             boolean execute = complaintModel.updateComplaint(complaintDAO,ds);
             if (execute) {
-                resp.sendRedirect(req.getContextPath() + "/complaint#submitComplaints");
+                resp.sendRedirect(req.getContextPath() + "/complaint?status=success#submitComplaints");
             } else {
-                req.setAttribute("submissionError", "Complaint submission failed. Please try again.");
-                req.getRequestDispatcher("/html/dashboard.jsp").forward(req, resp);
-            }
+                resp.sendRedirect(req.getContextPath() + "/complaint?status=error#submitComplaints");
+            }//update
 
-        } else {
+        } else {//save
             ComplaintDAO complaintDAO = new ComplaintDAO(
                     date,
                     description,
@@ -83,11 +82,11 @@ public class ComplaintController extends HttpServlet {
             );
             boolean execute = complaintModel.saveComplaint(complaintDAO,ds);
             if (execute) {
-                resp.sendRedirect(req.getContextPath() + "/complaint#submitComplaints");
+                resp.sendRedirect(req.getContextPath() + "/complaint?status=success#submitComplaints");
             } else {
-                req.setAttribute("submissionError", "Complaint submission failed. Please try again.");
-                req.getRequestDispatcher("/html/dashboard.jsp").forward(req, resp);
+                resp.sendRedirect(req.getContextPath() + "/complaint?status=error#submitComplaints");
             }
+
         }
 
 

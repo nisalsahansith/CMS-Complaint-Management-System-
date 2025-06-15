@@ -8,6 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Admin Page</title>
   <link rel="stylesheet" href="${pageContext.request.contextPath}/CSS/dashboard.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
 </head>
 <body>
 
@@ -28,8 +29,7 @@
     <nav>
       <ul>
         <li><a href="#home">Home</a></li>
-        <li><a href="#submitComplaints">Submit Complaints</a></li>
-        <li><a href="#myComplaints">My Complaints</a></li>
+        <li><a href="#myComplaints">Complaints</a></li>
         <li><a href="${pageContext.request.contextPath}/logout">Logout</a></li>
       </ul>
     </nav>
@@ -40,8 +40,8 @@
   </header>
   <main>
     <section id="home">
-      <h2>Welcome to the Dashboard</h2>
-      <p>This is your dashboard where you can manage your complaints and view status.</p>
+      <h2>Welcome to the Admin Dashboard</h2>
+      <p>This is your dashboard where you can manage complaints.</p>
     </section>
 
 
@@ -51,7 +51,7 @@
       <input type="hidden" name="description" id="description" />
       <input type="hidden" name="date" id="date" />
       <input type="hidden" name="uid" id="uid" />
-      <label for="reply">Reply:</label><br>
+      <label for="reply">Remark:</label><br>
       <textarea id="reply" name="reply" rows="4" cols="50" placeholder="Write your response here..."></textarea><br><br>
 
       <input type="hidden" name="status" id="status" />
@@ -69,7 +69,7 @@
           <th>Description</th>
           <th>Date Submitted</th>
           <th>Status</th>
-          <th>Reply</th>
+          <th>Remark</th>
           <th>User ID</th>
           <th style="width: 260px;">Action</th>
         </tr>
@@ -126,6 +126,7 @@
   </main>
   <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
           crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script src="${pageContext.request.contextPath}/js/adminPage.js"></script>
 </body>
 </html>

@@ -49,11 +49,6 @@ public class SignUpController extends HttpServlet {
         } else {
             req.setAttribute("registrationError", "Email or username already exists!");
             req.getRequestDispatcher("/index.jsp").forward(req, resp);
-//            mapper.writeValue(out, Map.of(
-//                    "code", "400",
-//                    "status", "error",
-//                    "message", "Username already exists!"
-//            ));
         }
 
     }

@@ -21,7 +21,7 @@ public class ComplaintModel {
 
         try (Connection connection = ds.getConnection()){
             PreparedStatement pstm = connection.prepareStatement(
-                    "INSERT INTO complaint (id,description,date,reply,user_id) VALUES (?,?,?,?,?)"
+                    "INSERT INTO complaint (id,description,date,remark,user_id) VALUES (?,?,?,?,?)"
             );
             pstm.setString(1,complaintDAO.getId());
             pstm.setString(2,complaintDAO.getDescription());
@@ -56,7 +56,7 @@ public class ComplaintModel {
                         rs.getString("description"),
                         rs.getString("date"),
                         rs.getString("status"),
-                        rs.getString("reply"),
+                        rs.getString("remark"),
                         rs.getString("user_id")
                 ));
             }
@@ -72,7 +72,7 @@ public class ComplaintModel {
 
         try (Connection connection = ds.getConnection()){
             PreparedStatement pstm = connection.prepareStatement(
-                    "UPDATE complaint SET description = ?, date = ?, status = ?, reply = ? WHERE id = ?"
+                    "UPDATE complaint SET description = ?, date = ?, status = ?, remark = ? WHERE id = ?"
             );
             pstm.setString(1, complaintDAO.getDescription());
             pstm.setString(2, complaintDAO.getDate());
@@ -120,7 +120,7 @@ public class ComplaintModel {
                         rs.getString("description"),
                         rs.getString("date"),
                         rs.getString("status"),
-                        rs.getString("reply"),
+                        rs.getString("remark"),
                         rs.getString("user_id")
                 ));
             }
