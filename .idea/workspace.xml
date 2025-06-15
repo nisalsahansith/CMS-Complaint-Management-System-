@@ -10,22 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="272b933a-41de-4a15-8233-bc83d79482bb" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/CMS_Web_exploded/CSS/welcomePage.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CMS_Web_exploded/CSS/welcomePage.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/CMS_Web_exploded/WEB-INF/classes/org/example/model/ComplaintModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CMS_Web_exploded/WEB-INF/classes/org/example/model/ComplaintModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/CMS_Web_exploded/html/adminPage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CMS_Web_exploded/html/adminPage.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/CMS_Web_exploded/html/dashboard.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CMS_Web_exploded/html/dashboard.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controllers/AdminPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controllers/AdminPageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controllers/ComplaintController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controllers/ComplaintController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controllers/SignUpController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controllers/SignUpController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/ComplaintModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/ComplaintModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/CSS/welcomePage.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/CSS/welcomePage.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/html/adminPage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/html/adminPage.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/html/dashboard.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/html/dashboard.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/js/adminPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/adminPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/js/dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/dashboard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/js/welcomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/welcomePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/db.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -219,7 +204,7 @@
       <option name="presentableId" value="Default" />
       <updated>1749719219512</updated>
       <workItem from="1749719220684" duration="46062000" />
-      <workItem from="1749965678027" duration="9752000" />
+      <workItem from="1749965678027" duration="10274000" />
     </task>
     <servers />
   </component>
