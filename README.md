@@ -28,6 +28,7 @@ This project is a web-based Complaint Management System (CMS) designed for the M
 1. **Clone the repository**
 
 ```bash
-mysql -u root -p < db/schema.sql
 git clone https://github.com/nisalsahansith/CMS-Complaint-Management-System-
-cd your-repo-name
+cd CMS-Complaint-Management-System-
+
+mysql -u root -p < db/schema.sql
