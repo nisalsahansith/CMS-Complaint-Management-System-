@@ -10,7 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="272b933a-41de-4a15-8233-bc83d79482bb" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/db.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,6 +92,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\CMS\CMS\db" />
       <recent name="E:\CMS\CMS\web" />
       <recent name="E:\CMS\CMS\web\web\WEB-INF" />
       <recent name="E:\CMS\CMS\web\WEB-INF" />
@@ -204,7 +205,10 @@
       <option name="presentableId" value="Default" />
       <updated>1749719219512</updated>
       <workItem from="1749719220684" duration="46062000" />
-      <workItem from="1749965678027" duration="10274000" />
+      <workItem from="1749965678027" duration="11146000" />
+      <workItem from="1750043721979" duration="1077000" />
+      <workItem from="1750064121639" duration="607000" />
+      <workItem from="1750157465259" duration="418000" />
     </task>
     <servers />
   </component>

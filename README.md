@@ -29,5 +29,5 @@ This project is a web-based Complaint Management System (CMS) designed for the M
 
 ```bash
 mysql -u root -p < db/schema.sql
-git clone https://github.com/your-username/your-repo-name.git
+git clone https://github.com/nisalsahansith/CMS-Complaint-Management-System-
 cd your-repo-name
